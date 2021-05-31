@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+	/* text colors */
+	--text-white: hsl(0, 0%, 100%);
+	--text-footer: hsl(240, 2%, 79%);
+	--text-blue: hsl(207, 13%, 34%);
+	--footer-bg: hsl(240, 10%, 16%);
+	--text-CTA: hsl(356, 100%, 66%);
+	--heading-darkblue: hsl(208, 49%, 24%);
+
+	/* background colors */
+
+	--hover-CTA: hsl(355, 100%, 74%);
+	--light-red-bg: hsl(13, 100%, 72%);
+	--red-bg: hsl(353, 100%, 62%);
+	--darker-blue-bg: hsl(237, 17%, 21%);
+	--dark-blue-bg: hsl(237, 23%, 32%);
+
+	/* Typography */
+
+	--primary-font: 'Overpass', sans-serif;
+	--secondary-font: 'Ubuntu', sans-serif;
+}
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: var(--primary-font);
+	font-weight: 300px;
+}
+
+header {
+	background-image: url(/images/bg-pattern-intro.svg),
+		linear-gradient(to right, var(--light-red-bg), var(--red-bg));
+	background-position: 25% 50%;
+	height: 500px;
+	border-bottom-left-radius: 100px;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+	padding: 40px 50px;
+	position: relative;
+}
+
+ul li {
+	text-decoration: none;
+	list-style: none;
+}
+
+.logo-container {
+	padding: 10px;
+	margin-right: 40px;
+}
+.main-nav {
+	display: flex;
+	width: 100%;
+	color: var(--text-footer);
+	margin-left: 20px;
+}
+
+.main-nav-item {
+	align-items: flex-start;
+	font-size: 0.9rem;
+	font-family: var(--secondary-font);
+	font-weight: 600;
+	cursor: pointer;
+	padding: 25px 20px;
+	position: relative;
+	transition: 0.1s;
+}
+
+.dropdown {
+	visibility: hidden;
+	position: absolute;
+	list-style: none;
+	padding: 30px 5px;
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 100px;
+	margin-left: -20px;
+	padding-left: 20px;
+	transition: 0.1s;
+	background-color: var(--text-white);
+	font-family: var(--secondary-font);
+	font-weight: 400;
+	box-shadow: 0px 0.5px 70px rgb(75, 88, 98, 0.3);
+}
+
+.dropdown li {
+	padding: 10px 5px;
+}
+
+.dropdown a {
+	text-decoration: none;
+	color: var(--darker-blue-bg);
+}
+
+.dropdown a:hover {
+	font-weight: bold;
+}
+
+.main-nav-item:hover {
+	color: var(--text-white);
+	text-decoration: underline;
+	transition: 0.1s;
+	transform: scale(1.1);
+}
+
+.main-nav-item-1:hover .dropdown-1 {
+	visibility: visible;
+	transition: 0;
+}
+.main-nav-item-2:hover .dropdown-2 {
+	visibility: visible;
+	transition: 0;
+}
+.main-nav-item-3:hover .dropdown-3 {
+	visibility: visible;
+	transition: 0;
+}
+
+.dropdown:hover {
+	visibility: visible;
+}
+
+.main-nav-item > img {
+	padding-left: 5px;
+}
+
+.account-btns {
+	margin-left: auto;
+	display: flex;
+	font-size: 0.9rem;
+	font-family: var(--secondary-font);
+	font-weight: 600;
+	padding: 5px 0px;
+}
+
+.secondary-btn {
+	background-color: transparent;
+	padding: 20px 40px;
+	text-decoration: none;
+	color: var(--text-footer);
+	cursor: pointer;
+}
+
+.secondary-btn:hover {
+	color: var(--text-white);
+	text-decoration: underline;
+	transform: scale(1.1);
+}
+
+.primary-btn {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px 50px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: var(--text-CTA);
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.primary-btn a {
+	text-decoration: none;
+	color: var(--text-CTA);
+}
+
+.primary-btn:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 0.5px 2px rgb(75, 88, 98, 0.3);
+	transform: scale(0.98);
+	transition: 0.1s;
+}
+
+.primary-btn:hover {
+	color: var(--text-white);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
