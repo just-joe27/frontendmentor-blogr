@@ -12,6 +12,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<title>Frontend Mentor | [Blogr]</title>
 	</head>
@@ -62,6 +63,7 @@
 							<li><a href="#"> Contact</a></li>
 							<li><a href="#"> Newsletter</a></li>
 							<li><a href="#"> LinkedIn</a></li>
+							
 						</menu>
 					</li>
 					<div class="account-btns">
@@ -76,7 +78,9 @@
 							</button></a>
 						</li>
 					</div>
+					
 				</ul>
+				<a href="#" class="icon" onclick="myFunction()"> <i class="fa fa-bars fa-2x"></i></a>
 			</nav>
       <div class="heading-container">
 			<hgroup class="header-headings">
@@ -113,9 +117,11 @@
 		blog by adding customized categories, sections, format, or flow. With this
 		functionality, you’re in full control.</p>
       </div>
-      <div class="section-image-content">
+      <picture class="section-image-content">
+		  <source media="(max-width:992px)" srcset="/images/illustration-editor-mobile.svg" />
+		  <source media="(min-width:993px)" srcset="/images/illustration-editor-desktop.svg" />
         <img src="/images/illustration-editor-desktop.svg" alt="Some graphs">
-      </div>
+	  </picture>
         </div>
         <aside>
           <div class="aside-container">
@@ -147,10 +153,12 @@
 		deployment a breeze, but capable of producing even the most complicated
 		sites.</p>
       </div>
-      <div class="section2-image-content">
+      <picture class="section2-image-content">
+		  <source media="(max-width:992px)" srcset="/images/illustration-laptop-mobile.svg" />
+		  <source media="(min-width:993px)" srcset="/images/illustration-laptop-desktop.svg" />
         <img src="/images/illustration-laptop-desktop.svg" alt="A laptop">
-      </div>
-        </div>
+	  </picture>
+	</div>
         </section>
     </section>
 	<footer class="footer">
