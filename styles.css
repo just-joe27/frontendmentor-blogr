@@ -39,7 +39,7 @@
 }
 
 html {
-	font-size: 1.25rem;
+	font-size: 16px;
 	font-family: var(--primary-font);
 	font-weight: 300px;
 }
@@ -62,13 +62,13 @@ html {
 .section-heading {
 	text-align: center;
 	padding: 5rem 1rem 1rem 1rem;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 	color: var(--heading-darkblue);
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	color: var(--heading-darkblue);
 	font-weight: 600;
 	padding: 20px 0px;
@@ -82,7 +82,7 @@ h3 {
 }
 
 h2.light {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 	margin-top: 100px;
 	margin-bottom: 30px;
@@ -120,6 +120,9 @@ ul li {
 	list-style: none;
 }
 
+p {
+	font-size: 0.9rem;
+}
 .main-nav {
 	display: flex;
 	width: 100vw;
@@ -256,9 +259,9 @@ ul li {
 	background-image: url(images/bg-pattern-circles.svg);
 	background-repeat: no-repeat;
 	background-position-y: 80%;
-	background-position-x: -20%;
+	background-position-x: -50%;
 	border-radius: 0px 150px 0px 150px;
-	height: 600px;
+	height: 500px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
@@ -270,15 +273,16 @@ ul li {
 	padding-right: 2rem;
 }
 .aside-image-container img {
-	transform: scale(1.5);
-	margin-left: 20%;
+	transform: scale(1.2);
+	margin-left: 15%;
+	margin-top: -2rem;
 }
 
 .aside-text-content {
 	padding: 0 2rem 0 1rem;
 	grid-column: 2;
 	text-align: left;
-	margin: 5% 0;
+	margin: 5% 2rem;
 	max-width: 40vw;
 }
 
@@ -297,7 +301,7 @@ ul li {
 .section2-text-content {
 	flex: 1 1 45%;
 	text-align: left;
-	padding-right: 1rem;
+	padding-right: 5rem;
 	min-width: 500px;
 	max-width: 800px;
 	margin-top: -150px;
