@@ -12,6 +12,3 @@ function menuToggle() {
 		dropdowns.forEach((dropdown) => dropdown.classList.remove('visible'));
 	}
 }
-
-function dropdownToggle()
-	
