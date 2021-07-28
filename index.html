@@ -26,13 +26,18 @@
 				</div>
 
 				<ul class="main-nav">
-					<li class="main-nav-item main-nav-item-1">
-						Product<img
+					<li class="main-nav-item" id="main-nav-item-1"  > Product
+						<picture class="drop-down-arrow">
+							<source media="(max-width:992px)" srcset="/images/icon-arrow-dark.svg" />
+		 					<source media="(min-width:993px)" srcset="/images/icon-arrow-light.svg" />
+						<img
 							class="dropdown-arrow"
+							id="dropdown-arrow-1"
 							src="images/icon-arrow-light.svg"
 							alt="Menu dropdown arrow"
 						/>
-						<menu class="dropdown dropdown-1">
+						</picture>
+						<menu class="dropdown" id="dropdown-1">
 							<li class="dropdown-item"><a href="#"> Overview</a></li>
 							<li class="dropdown-item"><a href="#"> Pricing</a></li>
 							<li class="dropdown-item"><a href="#"> Marketplace</a></li>
@@ -40,26 +45,35 @@
 							<li class="dropdown-item"><a href="#"> Integrations</a></li>
 						</menu>
 					</li>
-					<li class="main-nav-item main-nav-item-2">
-						Company<img
+					<li class="main-nav-item" id="main-nav-item-2" > Company
+						<picture class="drop-down-arrow">
+							<source media="(max-width:992px)" srcset="/images/icon-arrow-dark.svg" />
+		 					<source media="(min-width:993px)" srcset="/images/icon-arrow-light.svg" />
+						<img id="dropdown-arrow-2"
 							class="dropdown-arrow"
 							src="images/icon-arrow-light.svg"
 							alt="Menu dropdown arrow"
 						/>
-						<menu class="dropdown dropdown-2">
+						</picture>
+						<menu class="dropdown" id="dropdown-2" >
 							<li><a href="#"> About</a></li>
 							<li><a href="#"> Team</a></li>
 							<li><a href="#"> Blog</a></li>
 							<li><a href="#"> Careers</a></li>
 						</menu>
 					</li>
-					<li class="main-nav-item main-nav-item-3">
-						Connect<img
+					<li class="main-nav-item" id="main-nav-item-3" > Connect
+						<picture class="drop-down-arrow">
+							<source media="(max-width:992px)" srcset="/images/icon-arrow-dark.svg" />
+		 					<source media="(min-width:993px)" srcset="/images/icon-arrow-light.svg" />
+						<img
 							class="dropdown-arrow"
+							id="dropdown-arrow-3"
 							src="images/icon-arrow-light.svg"
 							alt="Menu dropdown arrow"
 						/>
-						<menu class="dropdown dropdown-3">
+						</picture>
+						<menu class="dropdown" id="dropdown-3">
 							<li><a href="#"> Contact</a></li>
 							<li><a href="#"> Newsletter</a></li>
 							<li><a href="#"> LinkedIn</a></li>
@@ -80,8 +94,8 @@
 					</div>
 					
 				</ul>
-				<a href="#" class="icon" onclick="myFunction()"> <i class="fa fa-bars fa-2x"></i></a>
-			</nav>
+				<a href="#" class="icon"  onclick="menuToggle()"> <img id="hamburger" src="images/icon-hamburger.svg"></a>
+				</nav>
       <div class="heading-container">
 			<hgroup class="header-headings">
 				<h1 class="header-title">A modern publishing platform</h1>
@@ -198,6 +212,7 @@
 					
 				</nav>
 	</footer>
+	<script src="script.js"></script>
 
 		
 	</body>
